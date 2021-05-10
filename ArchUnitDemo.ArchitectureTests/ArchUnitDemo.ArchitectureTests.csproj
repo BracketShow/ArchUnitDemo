@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="TngTech.ArchUnitNET" Version="0.5.3" />
+    <PackageReference Include="TngTech.ArchUnitNET.xUnit" Version="0.5.3" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="1.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ArchUnitDemo.Data.Abstractions\ArchUnitDemo.Data.Abstractions.csproj" />
+    <ProjectReference Include="..\ArchUnitDemo.Data\ArchUnitDemo.Data.csproj" />
+    <ProjectReference Include="..\ArchUnitDemo.Domain.Abstractions\ArchUnitDemo.Domain.Abstractions.csproj" />
+    <ProjectReference Include="..\ArchUnitDemo.Domain.Entities\ArchUnitDemo.Domain.Entities.csproj" />
+    <ProjectReference Include="..\ArchUnitDemo.Domain\ArchUnitDemo.Domain.csproj" />
+    <ProjectReference Include="..\ArchUnitDemo\Client\ArchUnitDemo.Client.csproj" />
+    <ProjectReference Include="..\ArchUnitDemo\Server\ArchUnitDemo.Server.csproj" />
+    <ProjectReference Include="..\ArchUnitDemo\Shared\ArchUnitDemo.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
